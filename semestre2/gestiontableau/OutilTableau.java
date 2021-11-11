@@ -40,7 +40,18 @@ public class OutilTableau {
         resultat[0] = table[0];
         resultat[1] = table[0];
 
-        // TODO
+       
+        /*
+         * on parcourt le tableau  et on met à jour le minimum et 
+         * le maximum, avec la case d'indice i, si besoin
+         */
+        for (int i = 1; i < table.length; i++) {
+            if (table[i] < resultat[0]) {
+                resultat[0] = table[i];
+            } else if (table[i] > resultat[1]) {
+                resultat[1] = table[i];
+            }
+        }
 
         return resultat;
     }

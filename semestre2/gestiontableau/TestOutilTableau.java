@@ -51,7 +51,12 @@ public class TestOutilTableau {
     public static void testMiniMaxi() {
         System.out.println("TEST de la méthode miniMaxi\n"
                 + "----------------------------\n");
-        // TODO    
+        int[] minMax = OutilTableau.miniMaxi(TABLE1);
+        System.out.println("Test 1 doit afficher -8 et 34 =>  minimum = "
+                           + minMax[0] + " et maximum = " + minMax[1]);
+        minMax = OutilTableau.miniMaxi(TABLE2);
+        System.out.println("Test 2 doit afficher 5 et 50  =>  minimum = "
+                           + minMax[0] + " et maximum = " + minMax[1]);  
     }
     
     
@@ -127,8 +132,8 @@ public class TestOutilTableau {
       * @param args non utilisé
       */
      public static void main(String[] args) {
-         testAfficher();
-         // testMiniMaxi();
+         // testAfficher();
+         testMiniMaxi();
          // testDecalerDroite();
          // testcompterOccurrence();
          // testDecalerDroiteIntervalle();
